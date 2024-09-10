@@ -1,5 +1,5 @@
 <h2>Верстка по макету:</h2> 
-[https://www.figma.com/design/sJwabNIQ83JF9XIGfYCOl4/Simple?node-id=0-1&t=VYu685680yFgDd3q-1](https://www.figma.com/design/ZbO9i7y6g8YJWSwNkodFgm/Dr.Web_Frontend_Test?node-id=0-1&node-type=canvas&t=ejDyWrQ1TPwV2gqQ-0)
+https://www.figma.com/design/ZbO9i7y6g8YJWSwNkodFgm/Dr.Web_Frontend_Test?node-id=0-1&node-type=canvas&t=ejDyWrQ1TPwV2gqQ-0
 <br>
 <br>
 + создание адаптива на все типы устройств<br>
