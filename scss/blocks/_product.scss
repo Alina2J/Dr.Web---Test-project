@@ -1,0 +1,203 @@
+.product {
+  margin-bottom: 64px;
+
+  @include mediaTabletLarge {
+    margin-bottom: 41px;
+  }
+
+  @include mediaPhoneLarge {
+    margin-bottom: 32px;
+  }
+
+  @include mediaPhoneSmall {
+    margin-bottom: 24px;
+    background-color: $icon-primary;
+  }
+}
+
+.product__wrapper {
+  display: grid;
+  grid-template-columns: auto minmax(296px, 368px);
+  gap: 63px;
+  align-items: center;
+
+  padding: 80px 100px;
+  background-color: $icon-primary;
+  border-radius: 32px;
+
+  @include mediaTabletLarge {
+    grid-template-columns: 1fr;
+    gap: 80px;
+
+    padding: 80px 64.5px;
+  }
+
+  @include mediaPhoneLarge {
+    gap: 60px;
+    padding: 60px 24px;
+  }
+
+  @include mediaPhoneSmall {
+    gap: 40px;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 40px 0;
+  }
+}
+
+@include mediaPhoneSmall {
+  .product__text {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}
+
+.product__date {
+  color: $primary-active;
+  font-weight: 600;
+  margin-top: 4px;
+  margin-bottom: 38px;
+  line-height: 0.83;
+}
+.product__title {
+  font-size: 32px;
+  color: $text-tertiary;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1;
+
+  @include mediaPhoneLarge {
+    font-size: 24px;
+  }
+
+  @include mediaPhoneSmall {
+    font-size: 20px;
+  }
+}
+
+.product__categories {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.product__category {
+  color: $text-placeholder;
+  font-size: 18px;
+  line-height: 0.75;
+  padding: 13px 12px;
+  border-radius: 80px;
+  border: $border-primary solid 1px;
+}
+.product__desc {
+  color: $text-tertiary;
+  line-height: 1.17;
+  margin-bottom: 27px;
+
+  @include mediaTabletLarge {
+    max-width: 442px;
+  }
+
+  @include mediaPhoneLarge {
+    font-size: 16px;
+  }
+}
+.product__link {
+  font-size: 16px;
+  color: $primary-active;
+  line-height: 0.89;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    bottom: 1px;
+    border-bottom: $primary-active solid 1px;
+  }
+}
+
+.product__card {
+  background-color: $card-bg;
+  border-radius: 10px;
+  padding: 40px 32px;
+
+  @include mediaTabletLarge {
+    max-width: 368px;
+    margin: 0 auto;
+  }
+}
+
+.card__img {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 12px;
+
+  @include mediaPhoneSmall {
+    font-size: 20px;
+  }
+}
+
+.card__desc {
+  font-size: 16px;
+  line-height: 1.15;
+  color: $text-secondary;
+  margin-bottom: 28px;
+}
+
+.card__price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.price__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.last-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: $text-gray;
+  text-decoration: line-through;
+  line-height: 0.75;
+}
+
+.comment-price {
+  font-size: 14px;
+  line-height: 0.78;
+  color: $text-black;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 0.89;
+}
+
+.card__link {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  background-color: $primary-active;
+  border-radius: 5px;
+
+  font-size: 18px;
+  line-height: 1;
+  color: $text-tertiary;
+
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
